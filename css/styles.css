@@ -294,6 +294,33 @@ img {
   padding: 30px;
 }
 
+/* clients section */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client_button {
+  padding: 0;
+  border: none;
+  width: 170px;
+  height: 92px;
+  color: aqua;
+  /* stroke: #afb1b8; */
+  /* border-radius: 50%; */
+  /* background-color: #fff; */
+}
+
+.client_button:hover,
+.client_button:focus {
+  columns: var(--blue);
+}
+
+.client_icon {
+  fill: currentColor;
+}
+
 /* footer section */
 
 .site_footer {
