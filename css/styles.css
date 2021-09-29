@@ -2,6 +2,7 @@
   --white: #fff;
   --black: #000;
   --grey: #757575;
+  --icon_grey: #afb1b8;
   --blue: #2196f3;
   --dark_bg: #2f303a;
   --dark_text: #212121;
@@ -102,7 +103,31 @@ img {
 }
 
 .header_mail {
+  display: inline-flex;
+  justify-content: center;
   margin-right: 50px;
+}
+
+.header_mail_icon {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.header_tel {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_tel_icon {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .site_nav {
@@ -153,7 +178,18 @@ img {
 /* hero section */
 
 .hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: var(--dark_bg);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
   color: var(--white);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -196,6 +232,16 @@ img {
 .feautures_list {
   display: flex;
   margin-left: -30px;
+}
+
+.feauture_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--button_grey);
 }
 
 .feautures_item {
@@ -296,6 +342,7 @@ img {
 
 .team_text {
   padding: 30px;
+  background: var(--white);
 }
 
 /* clients section */
@@ -311,30 +358,29 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 5px;
-  background-color: #fff;
-  /* align-items: center;
+  fill: var(--icon_grey);
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.client_icon {
+  display: flex;
   justify-content: center;
-  
-  flex-direction: row;
-  
-   */
+  align-items: center;
+}
+
+.client_button:hover,
+.client_button:focus {
+  fill: var(--blue);
+  border: 1px solid var(--blue);
 }
 
 .clients_list {
   display: flex;
 }
 
-.clients-item:not(:last-child) {
+.clients_item:not(:last-child) {
   padding-right: 30px;
-}
-
-.client_button:hover,
-.client_button:focus {
-  columns: var(--blue);
-}
-
-.client_icon {
-  fill: currentColor;
 }
 
 /* footer section */
