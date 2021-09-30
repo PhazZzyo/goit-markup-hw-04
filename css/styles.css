@@ -102,9 +102,12 @@ img {
   margin-left: auto;
 }
 
+.contacts_center {
+  display: flex;
+  align-items: center;
+}
+
 .header_mail {
-  display: inline-flex;
-  justify-content: center;
   margin-right: 50px;
 }
 
@@ -114,12 +117,7 @@ img {
   width: 16px;
   height: 12px;
   fill: currentColor;
-}
-
-.header_tel {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  margin-right: 10px;
 }
 
 .header_tel_icon {
@@ -128,6 +126,7 @@ img {
   width: 10px;
   height: 16px;
   fill: currentColor;
+  margin-right: 10px;
 }
 
 .site_nav {
@@ -234,7 +233,7 @@ img {
   margin-left: -30px;
 }
 
-.feauture_icon {
+.feauture_icon_container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,6 +241,11 @@ img {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--button_grey);
+}
+
+.feauture_icon {
+  width: 70px;
+  height: 70px;
 }
 
 .feautures_item {
@@ -332,6 +336,7 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .team .header3 {
@@ -343,6 +348,46 @@ img {
 .team_text {
   padding: 30px;
   background: var(--white);
+}
+
+.social_list {
+  display: flex;
+  justify-content: center;
+}
+
+.social_item {
+  width: 44px;
+  height: 44px;
+}
+
+.social_item + .social_item {
+  margin-left: 10px;
+}
+
+.social_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.social_link:hover,
+.social_link:focus {
+  background-color: var(--blue);
+}
+
+.social_link:hover .social_icon,
+.social_link:focus .social_icon {
+  fill: var(--white);
+}
+
+.social_icon {
+  fill: var(--icon_grey);
+  width: 20px;
+  height: 20px;
 }
 
 /* clients section */
@@ -386,7 +431,6 @@ img {
 /* footer section */
 
 .site_footer {
-  display: block;
   background-color: var(--dark_bg);
   color: var(--white);
   padding-top: 60px;
