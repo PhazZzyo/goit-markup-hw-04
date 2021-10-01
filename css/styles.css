@@ -143,6 +143,10 @@ img {
   text-decoration: none;
 }
 
+.header_contacts .link {
+  color: var(--grey);
+}
+
 .site_nav .link:hover,
 .site_nav .link:focus {
   color: var(--blue);
